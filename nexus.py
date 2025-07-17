@@ -61,6 +61,13 @@ def execute_command(command):
                     value = value_str.strip('"').strip("'")
 
         variables[variable_name] = value
+    elif cmd == "anothercatfromme":
+        print("You found a easter egg! PhT389VhhdP[.9]---==+")
+    elif cmd == "example":
+        print("print {text} - print a text")
+        print("wait <number> [text] - wait command")
+        print("stop - stops the app.")
+        print("TIP: This is just a basic commands.")
     else:
         print(f"ERROR: Command '{cmd}' not found.")
 
