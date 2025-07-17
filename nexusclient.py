@@ -7,6 +7,7 @@ print("0  0   0   000000      0       0     0    000000")
 print("0   0  0   0          0 0      0     0         0")
 print("0    000   000000    0   0     0000000    000000")
 print("Welcome to Nexus client!")
+print("TIP: Commands in client stopped in snapshot 25s07a. You just can see a list of commands.")
 while True:
     cmd = input("cmd>")
     parts = cmd.split()
@@ -20,6 +21,8 @@ while True:
         print("wait [num] - Waits a [num]")
         print("input [text] - Input command.")
         print("let [varname] = [variable] - Add a variable (NOT WORKING IN CLIENT!)")
+        print("********* - easter egg! try to find it!")
+        print("example - shows basic commands")
     # Print command
     elif len(parts) >= 2 and parts[0].lower() == "print":
         printtxt = " ".join(parts[1:])
